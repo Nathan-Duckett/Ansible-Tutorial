@@ -1,0 +1,6 @@
+[virtual-hosts]
+10.0.0.10
+
+[virtual-hosts:vars]
+ansible_connect=ssh
+ansible_ssh_user=nathan

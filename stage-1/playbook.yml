@@ -1,0 +1,4 @@
+- name: First Playbook
+  hosts: virtual-hosts
+  roles:
+    - ./roles/role-stage-1
