@@ -1,0 +1,4 @@
+package_list:
+  - git
+  - openjdk-11-jdk
+  - maven

@@ -1,0 +1,11 @@
+- name: Install packages
+  package:
+    name: "{{ item }}"
+    state: present
+  with_items:
+    - "{{ package_list }}"
+  become: yes
+- name: Verify Java Version
+  command: test "$(java --version)" != ""
+- name: Verify $JAVA_HOME is set
+  command: test "$(echo $JAVA_HOME)" != ""
